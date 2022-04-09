@@ -16,4 +16,4 @@ COPY . /Loss_Assessment_Processing
 # configure the container to run in an executed manner
 ENTRYPOINT [ "python" ]
 
-CMD ["python main.py" ]
+CMD [ "main.py" ]

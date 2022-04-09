@@ -3,10 +3,6 @@ from base64 import *
 import base64
 import os
 import uuid
-from PIL import Image
-
-from email.mime import image
-
 def Get_img_Encorded_value(filename):
     image=open(filename,'rb')
     image_reader=image.read()

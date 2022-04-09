@@ -1,5 +1,5 @@
 
-import logging
+#import logging
 from flask import Flask, render_template, request, redirect, url_for, session
 from flask_mysqldb import MySQL
 import MySQLdb.cursors
@@ -14,9 +14,9 @@ app.secret_key = 'your secret key'
 
 
 #logging application consol
-logger = logging.getLogger('werkzeug') # grabs underlying WSGI logger
-handler = logging.FileHandler('app.log') # creates handler for the log file
-logger.addHandler(handler) # adds handler to the werkzeug WSGI logger
+#logger = logging.getLogger('werkzeug') # grabs underlying WSGI logger
+#handler = logging.FileHandler('app.log') # creates handler for the log file
+#logger.addHandler(handler) # adds handler to the werkzeug WSGI logger
 
 # Enter your database connection details below
 app.config['MYSQL_HOST'] = 'localhost'
@@ -175,19 +175,19 @@ def Get_Report():
 @app.errorhandler(404)
 def page_not_found(error):
     error_msg='Error 404: This page does not exist !!'
-    logger.exception(error_msg)
+    #logger.exception(error_msg)
     return render_template('error.html',error_msg=error_msg)
 
 @app.errorhandler(DatabaseError)
 def special_exception_handler(error):
     error_msg='Error 500: Database connection failed !!'
-    logger.exception(error_msg)
+    #logger.exception(error_msg)
     return render_template('error.html',error_msg=error_msg)
 
 @app.errorhandler(Exception)          
 def Error(e):
     error_msg="An Error occured: " + str(e)
-    logger.exception(error_msg)
+    #logger.exception(error_msg)
     return render_template('error.html',error_msg=error_msg)
 
 if __name__ == "__main__":

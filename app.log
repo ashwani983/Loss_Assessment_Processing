@@ -1,0 +1,215 @@
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+Application started
+Error 500: Database connection failed !!
+Traceback (most recent call last):
+  File "C:\Users\Ashwani\Documents\Loss_Assessment_Processing\env\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Ashwani\Documents\Loss_Assessment_Processing\env\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:/Users/Ashwani/Documents/Loss_Assessment_Processing/main.py", line 42, in login
+    cursor = mysql.connection.cursor(MySQLdb.cursors.DictCursor)
+  File "C:\Users\Ashwani\Documents\Loss_Assessment_Processing\env\lib\site-packages\flask_mysqldb\__init__.py", line 101, in connection
+    ctx.mysql_db = self.connect
+  File "C:\Users\Ashwani\Documents\Loss_Assessment_Processing\env\lib\site-packages\flask_mysqldb\__init__.py", line 88, in connect
+    return MySQLdb.connect(**kwargs)
+  File "C:\Users\Ashwani\Documents\Loss_Assessment_Processing\env\lib\site-packages\MySQLdb\__init__.py", line 123, in Connect
+    return Connection(*args, **kwargs)
+  File "C:\Users\Ashwani\Documents\Loss_Assessment_Processing\env\lib\site-packages\MySQLdb\connections.py", line 185, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb._exceptions.OperationalError: (2002, "Can't connect to server on 'localhost' (10061)")
+127.0.0.1 - - [08/Apr/2022 13:52:11] "POST / HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:52:11] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+Application started
+127.0.0.1 - - [08/Apr/2022 13:52:11] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:53:55] "[32mGET /home HTTP/1.1[0m" 302 -
+Application started
+127.0.0.1 - - [08/Apr/2022 13:53:55] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:53:55] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+Application started
+127.0.0.1 - - [08/Apr/2022 13:53:59] "[32mPOST / HTTP/1.1[0m" 302 -
+127.0.0.1 - - [08/Apr/2022 13:53:59] "GET /home HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:53:59] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Apr/2022 13:53:59] "GET /home HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:54:02] "GET /claim HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:54:02] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Apr/2022 13:54:02] "GET /claim HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:54:05] "GET /profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:54:05] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Apr/2022 13:54:05] "GET /profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:54:06] "GET /claim HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:54:06] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Apr/2022 13:54:06] "GET /claim HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:54:10] "POST /Get_Report HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:54:10] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+An Error occured: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "C:\Users\Ashwani\Documents\Loss_Assessment_Processing\env\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Ashwani\Documents\Loss_Assessment_Processing\env\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:/Users/Ashwani/Documents/Loss_Assessment_Processing/main.py", line 173, in Get_Report
+    return render_template('Get_Report.html', Claim_Report=Claim_Report,claim_number=claim_number)
+  File "C:\Users\Ashwani\Documents\Loss_Assessment_Processing\env\lib\site-packages\werkzeug\datastructures.py", line 377, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [08/Apr/2022 13:54:10] "GET /Get_Report HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:54:13] "GET /claim HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:54:15] "POST /Get_Report HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:54:15] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+An Error occured: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "C:\Users\Ashwani\Documents\Loss_Assessment_Processing\env\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Ashwani\Documents\Loss_Assessment_Processing\env\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:/Users/Ashwani/Documents/Loss_Assessment_Processing/main.py", line 173, in Get_Report
+    return render_template('Get_Report.html', Claim_Report=Claim_Report,claim_number=claim_number)
+  File "C:\Users\Ashwani\Documents\Loss_Assessment_Processing\env\lib\site-packages\werkzeug\datastructures.py", line 377, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [08/Apr/2022 13:54:15] "GET /Get_Report HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:54:18] "GET /claim HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:54:20] "POST /Get_Report HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:54:20] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+An Error occured: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "C:\Users\Ashwani\Documents\Loss_Assessment_Processing\env\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Ashwani\Documents\Loss_Assessment_Processing\env\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "c:/Users/Ashwani/Documents/Loss_Assessment_Processing/main.py", line 173, in Get_Report
+    return render_template('Get_Report.html', Claim_Report=Claim_Report,claim_number=claim_number)
+  File "C:\Users\Ashwani\Documents\Loss_Assessment_Processing\env\lib\site-packages\werkzeug\datastructures.py", line 377, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [08/Apr/2022 13:54:20] "GET /Get_Report HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:54:22] "GET /claim HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:55:09] "GET /home HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:55:09] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Apr/2022 13:55:09] "GET /home HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:55:13] "GET /claim HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:55:13] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Apr/2022 13:55:13] "GET /claim HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:55:14] "GET /profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:55:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Apr/2022 13:55:15] "GET /profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:55:16] "[32mGET /logout HTTP/1.1[0m" 302 -
+Application started
+127.0.0.1 - - [08/Apr/2022 13:55:16] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:55:16] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+Application started
+127.0.0.1 - - [08/Apr/2022 13:55:24] "[32mPOST / HTTP/1.1[0m" 302 -
+127.0.0.1 - - [08/Apr/2022 13:55:24] "GET /home HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:55:24] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Apr/2022 13:55:24] "GET /home HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:55:27] "GET /home HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:55:27] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Apr/2022 13:55:27] "GET /home HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:55:29] "GET /claim HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:55:29] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Apr/2022 13:55:29] "GET /claim HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:55:30] "GET /profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:55:30] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Apr/2022 13:55:30] "GET /profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:55:32] "GET /claim HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:55:32] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Apr/2022 13:55:32] "GET /claim HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:55:33] "GET /home HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:55:33] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Apr/2022 13:55:33] "GET /home HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:55:45] "GET /home HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:55:45] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Apr/2022 13:55:45] "GET /home HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:55:48] "GET /claim HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:55:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Apr/2022 13:55:48] "GET /claim HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:55:50] "GET /home HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 13:55:50] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Apr/2022 13:55:50] "GET /home HTTP/1.1" 200 -
+ * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+127.0.0.1 - - [08/Apr/2022 15:55:14] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 15:55:14] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+Error 404: This page does not exist !!
+Traceback (most recent call last):
+  File "C:\Users\Ashwani\Documents\Loss_Assessment_Processing\env\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Ashwani\Documents\Loss_Assessment_Processing\env\lib\site-packages\flask\app.py", line 1492, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\Ashwani\Documents\Loss_Assessment_Processing\env\lib\site-packages\flask\app.py", line 1474, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "C:\Users\Ashwani\Documents\Loss_Assessment_Processing\env\lib\site-packages\flask\ctx.py", line 376, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\Ashwani\Documents\Loss_Assessment_Processing\env\lib\site-packages\werkzeug\routing.py", line 2042, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+127.0.0.1 - - [08/Apr/2022 15:55:14] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 15:55:23] "[32mPOST / HTTP/1.1[0m" 302 -
+127.0.0.1 - - [08/Apr/2022 15:55:23] "GET /home HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 15:55:23] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Apr/2022 15:55:23] "GET /home HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 15:55:56] "[32mPOST /claim HTTP/1.1[0m" 302 -
+127.0.0.1 - - [08/Apr/2022 15:55:56] "GET /claim HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 15:55:56] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Apr/2022 15:55:56] "GET /claim HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 15:56:06] "GET /static/img/5786efd215f84f5c890d6fbe8e0f72a0_img1.jpg HTTP/1.1" 200 -
+Error 404: This page does not exist !!
+Traceback (most recent call last):
+  File "C:\Users\Ashwani\Documents\Loss_Assessment_Processing\env\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Ashwani\Documents\Loss_Assessment_Processing\env\lib\site-packages\flask\app.py", line 1492, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\Ashwani\Documents\Loss_Assessment_Processing\env\lib\site-packages\flask\app.py", line 1474, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "C:\Users\Ashwani\Documents\Loss_Assessment_Processing\env\lib\site-packages\flask\ctx.py", line 376, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\Ashwani\Documents\Loss_Assessment_Processing\env\lib\site-packages\werkzeug\routing.py", line 2042, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+127.0.0.1 - - [08/Apr/2022 15:56:06] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 15:56:25] "POST /Get_Report HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 15:56:25] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+An Error occured: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Traceback (most recent call last):
+  File "C:\Users\Ashwani\Documents\Loss_Assessment_Processing\env\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Ashwani\Documents\Loss_Assessment_Processing\env\lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File ".\main.py", line 172, in Get_Report
+    claim_number = request.form['claim_id']
+  File "C:\Users\Ashwani\Documents\Loss_Assessment_Processing\env\lib\site-packages\werkzeug\datastructures.py", line 377, in __getitem__
+    raise exceptions.BadRequestKeyError(key)
+werkzeug.exceptions.BadRequestKeyError: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+127.0.0.1 - - [08/Apr/2022 15:56:25] "GET /Get_Report HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 15:56:36] "GET /home HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 15:56:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Apr/2022 15:56:37] "GET /home HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 15:56:38] "GET /profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 15:56:38] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Apr/2022 15:56:38] "GET /profile HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 15:56:39] "[32mGET /logout HTTP/1.1[0m" 302 -
+127.0.0.1 - - [08/Apr/2022 15:56:39] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 15:56:39] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+Error 404: This page does not exist !!
+Traceback (most recent call last):
+  File "C:\Users\Ashwani\Documents\Loss_Assessment_Processing\env\lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\Ashwani\Documents\Loss_Assessment_Processing\env\lib\site-packages\flask\app.py", line 1492, in dispatch_request
+    self.raise_routing_exception(req)
+  File "C:\Users\Ashwani\Documents\Loss_Assessment_Processing\env\lib\site-packages\flask\app.py", line 1474, in raise_routing_exception
+    raise request.routing_exception  # type: ignore
+  File "C:\Users\Ashwani\Documents\Loss_Assessment_Processing\env\lib\site-packages\flask\ctx.py", line 376, in match_request
+    result = self.url_adapter.match(return_rule=True)  # type: ignore
+  File "C:\Users\Ashwani\Documents\Loss_Assessment_Processing\env\lib\site-packages\werkzeug\routing.py", line 2042, in match
+    raise NotFound()
+werkzeug.exceptions.NotFound: 404 Not Found: The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.
+127.0.0.1 - - [08/Apr/2022 15:56:39] "GET /favicon.ico HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 15:56:47] "[32mPOST / HTTP/1.1[0m" 302 -
+127.0.0.1 - - [08/Apr/2022 15:56:47] "GET /home HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 15:56:47] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Apr/2022 15:56:47] "GET /home HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 15:56:48] "GET /claim HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 15:56:48] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Apr/2022 15:56:49] "GET /claim HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 15:56:57] "GET /home HTTP/1.1" 200 -
+127.0.0.1 - - [08/Apr/2022 15:56:57] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+127.0.0.1 - - [08/Apr/2022 15:56:57] "GET /home HTTP/1.1" 200 -

@@ -1,0 +1,44 @@
+{% extends 'layout.html' %}
+
+{% block title %}Claim{% endblock %}
+
+{% block content %}
+<h2>Claim Request 📃</h2>
+{% if n!=0: %}
+<div>
+    <table border="1" class="claim_table">
+        <tr>
+            <th>Claim ID </th>
+            <th>Name </th>
+            <th>Email </th>
+            <th>Image 1 </th>
+            <th>Image 2 </th>
+            <th>Image 3 </th>
+            <th>Status </th>
+            <th></th>
+            
+        </tr>
+        {% for i in range(0,n): %}
+        <tr>
+            <td>{{ claim_data.iloc[i]['claim_number'] }}</td>
+            <td>{{ claim_data.iloc[i]['name'] }}</td>
+            <td>{{ claim_data.iloc[i]['email'] }}</td>
+            
+            <td><a href="{{ claim_data.iloc[i]['img1'] }}" target="_blank" style="text-decoration: none;">Image1</a></td>
+            <td><a href="{{ claim_data.iloc[i]['img2'] }}" target="_blank" style="text-decoration: none;">Image2</a></td>
+            <td><a href="{{ claim_data.iloc[i]['img3'] }}" target="_blank" style="text-decoration: none;">Image3</a></td>
+            <td>{{ claim_data.iloc[i]['status'] }}</td>
+
+            <td><form action="{{ url_for('Get_Report') }}" method="post" autocomplete="off">
+                <input type="text" hidden name="claim_id" id="claim_id" value="{{ claim_data.iloc[i]['claim_number'] }}">
+                <input type="submit" value="Get Report">
+            </form></td>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+{% else: %}
+        <div class="msg">{{ msg }}</div>
+{% endif %}
+{% endblock %}

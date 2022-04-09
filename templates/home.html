@@ -1,0 +1,38 @@
+{% extends 'layout.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+<h2>Home Page</h2>
+<p>Welcome back, {{ username }}!</p>
+<div class="home_form">
+<form action="{{ url_for('claim') }}" method="post" autocomplete="off" enctype="multipart/form-data">
+    <label for="username">
+        <i class="fas fa-user"></i>
+    </label>
+    <input type="text" name="name" placeholder="Name" id="name" required>
+    <label for="car_modal">
+        <i class="fas fa-car"></i>
+    </label>
+    <input type="text" name="car_modal" placeholder="Car Modal" id="car_modal" required>
+    <label for="email">
+        <i class="fas fa-envelope"></i>
+    </label>
+    <input type="email" name="email" placeholder="Email" id="email" required>
+    <label for="file1">
+        <i class="fas fa-file-upload"></i>
+    </label>
+    <input type="file" name="img1" accept="image/*" placeholder="file1" id="img1" required>
+    <label for="file2">
+        <i class="fas fa-file-upload"></i>
+    </label>
+    <input type="file" name="img2" accept="image/*" placeholder="file2" id="img2" required>
+    <label for="file3">
+        <i class="fas fa-file-upload"></i>
+    </label>
+    <input type="file" name="img3" accept="image/*"  placeholder="file3" id="img3" required>
+    <div class="msg">{{ msg }}</div>
+    <input type="submit" value="Submit Claim">
+</form>
+</div>
+{% endblock %}

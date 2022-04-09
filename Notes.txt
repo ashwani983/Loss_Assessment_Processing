@@ -1,5 +1,6 @@
+docker image rm flask_docker
 docker image build -t flask_docker .                #to launch app on docker
-docker run -p 5000:5000 -d flask_docker             #to launch app
+docker run -d --name flask_docker -p 5000:5000 -d flask_docker             #to launch app
 
 
 docker inspect --format '{{ .NetworkSettings.Networks.nat.IPAddress }}' f14f8a2f1e93  
